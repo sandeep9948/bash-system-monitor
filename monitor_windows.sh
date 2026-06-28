@@ -10,10 +10,13 @@ echo "============================" >> "$LOG_FILE"
 CPU=$(wmic cpu get loadpercentage | awk 'NR==2 {print $1}')
 echo "CPU Usage: $CPU%" >> "$LOG_FILE"
 
-MEMORY=$(wmic OS get FreePhysicalMemory,TotalVisibleMemorySize /Value)
-echo "$MEMORY" >> "$LOG_FILE"
+FREE_MEM=$(wmic OS get FreePhysicalMemory | awk 'NR==2 {print $1}')
+TOTAL_MEM=$(wmic OS get TotalVisibleMemorySize | awk 'NR==2 {print $1}')
 
-DISK=$(wmic logicaldisk where "DeviceID='C:'" get Size,FreeSpace)
+echo "Free Memory (KB): $FREE_MEM" >> "$LOG_FILE"
+echo "Total Memory (KB): $TOTAL_MEM" >> "$LOG_FILE"
+
+DISK=$(wmic logicaldisk get size,freespace,caption)
 echo "$DISK" >> "$LOG_FILE"
 
 echo "" >> "$LOG_FILE"
