@@ -5,3 +5,41 @@ CPU Usage: %
 Memory - 
 Disk - Used: 476G / Total: Files/Git (19G)
 
+============================
+Health Check: 2026-06-28 16:30:30
+============================
+CPU Usage: 20%
+
+FreeSpace    Size          
+20399812608  510414622720  
+
+
+============================
+Health Check: 2026-06-28 16:33:27
+============================
+CPU Usage: 16%
+Free Memory (KB): 3121524
+Total Memory (KB): 16401152
+
+============================
+Health Check: 2026-06-28 16:34:19
+============================
+CPU Usage: 17%
+Caption  FreeSpace    Size          
+C:       20170891264  510414622720  
+D:                                  
+
+Free Memory (KB): 3119484
+Total Memory (KB): 16401152
+
+============================
+Health Check: 2026-06-28 16:34:53
+============================
+CPU Usage: 20%
+Free Memory (KB): 3110368
+Total Memory (KB): 16401152
+Caption  FreeSpace    Size          
+C:       20170805248  510414622720  
+D:                                  
+
+
